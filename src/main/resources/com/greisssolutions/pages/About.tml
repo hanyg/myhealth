@@ -1,0 +1,11 @@
+<html t:type="layout" title="About myhealth"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+
+    <div class="row">
+        <div class="span12">
+            <p>About My Health</p>
+        </div>
+    </div>
+
+</html>

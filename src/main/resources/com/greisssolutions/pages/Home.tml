@@ -1,0 +1,41 @@
+<html t:type="layout" title="My Health"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+        >
+
+    <div class="row">
+
+        <div class="col-sm-8">
+
+            <t:grid source="readings" reorder="systolic,diastolic,heartrate"/>
+
+        </div>
+
+        <div class="col-sm-4">
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Averages</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Systolic</td><td>${systolicavg}</td>
+                    </tr>
+                    <tr>
+                        <td>Systolic</td><td>${diastolicavg}</td>
+                    </tr>
+                    <tr>
+                        <td>Heart Rate</td><td>${heartrateavg}</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <t:eventlink t:event="create">Add Reading</t:eventlink>
+
+</html>
